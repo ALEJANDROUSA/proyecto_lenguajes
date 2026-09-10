@@ -53,59 +53,44 @@ arcanum/
 │   ├── main.py            # corre el lexer/parser sobre un archivo .arc
 │   └── errores.py         # mensajes de error con línea y columna
 ├── examples/
-│   ├── valido_completo.arc
-│   ├── valido_asignaciones.arc
-│   ├── valido_carga_seleccion.arc
-│   ├── valido_filtro_avanzado.arc
-│   ├── invalido_lexico.arc
-│   ├── invalido_lexico_caracter.arc
-│   ├── invalido_sintactico.arc
-│   └── invalido_sintactico_recolectar.arc
 ├── requirements.txt
 └── README.md
 ```
 
 Ver `docs/01_documento_alcance.md` para el alcance, usuarios,
 entradas/salidas y restricciones del lenguaje; `docs/02_catalogo_instrucciones.md`
-para el catálogo completo de palabras reservadas, operadores y
-literales; `docs/03_gramatica_bnf_ebnf.md` para la gramática formal en
-BNF/EBNF; y `docs/04_arquitectura_librerias_futuras.md` para el diseño
-planeado del sistema de librerías propias (compendios) de los próximos
-cortes.
+para el catálogo completo de palabras reservadas, operadores y literales;
+`docs/03_gramatica_bnf_ebnf.md` para la gramática formal en BNF/EBNF; y
+`docs/04_arquitectura_librerias_futuras.md` para el diseño planeado del
+sistema de librerías propias (compendios) de los próximos cortes.
 
 ## Instalación
 
 Se necesita Java (para correr ANTLR) y Python 3.
 
 ```bash
-sudo apt install antlr4          # instala la herramienta ANTLR (Java)
-pip install -r requirements.txt  # instala el runtime de Python
+sudo apt install antlr4
 ```
 
-Si `apt install antlr4` no está disponible en su sistema (por ejemplo en
+Si `apt install antlr4` no está disponible en el sistema (por ejemplo en
 Windows), se puede descargar `antlr-4.9.2-complete.jar` manualmente y correr
 `java -jar antlr-4.9.2-complete.jar` en vez de `antlr4`. Lo importante es
 que la versión del runtime de Python (`requirements.txt`) coincida con la
-versión de la herramienta que generó el código; si usan otra versión de
+versión de la herramienta que generó el código; si se usa otra versión de
 ANTLR, hay que actualizar también `requirements.txt`.
 
-## Cómo regenerar el lexer y el parser
+## Cómo correrlo
 
-La carpeta `generated/` ya viene con el código armado, pero si modifican
-`Arcanum.g4` hay que volver a generarlo:
+Crear y activar el entorno virtual, e instalar las dependencias de Python
+dentro de él:
 
 ```bash
-cd grammar
-antlr4 -Dlanguage=Python3 -visitor -o ../generated Arcanum.g4
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-`-visitor` le pide a ANTLR que también genere `ArcanumVisitor.py`, que se
-usará en el siguiente corte cuando sí ejecutemos las operaciones sobre los
-datos. En este corte no lo usamos porque no hay semántica que ejecutar
-todavía — usar un Visitor vacío hubiera sido código de relleno sin función
-real.
-
-## Cómo correr un programa
+Con el entorno activado, correr un archivo de ejemplo:
 
 ```bash
 cd src
@@ -114,6 +99,28 @@ python3 main.py ../examples/valido_completo.arc
 
 Con un archivo correcto, imprime el árbol de análisis completo. Con un
 archivo con errores, imprime cada error con línea y columna en vez del árbol.
+
+Para salir del entorno virtual cuando se termine:
+
+```bash
+deactivate
+```
+
+## Cómo regenerar el lexer y el parser
+
+La carpeta `generated/` ya viene con el código armado, pero si se modifica
+`Arcanum.g4` hay que volver a generarlo:
+
+```bash
+cd grammar
+antlr4 -Dlanguage=Python3 -visitor -o ../generated Arcanum.g4
+```
+
+`-visitor` le pide a ANTLR que también genere `ArcanumVisitor.py`, que se
+usará en el siguiente corte cuando sí se ejecuten las operaciones sobre los
+datos. En este corte no se usa porque no hay semántica que ejecutar
+todavía — usar un Visitor vacío hubiera sido código de relleno sin función
+real.
 
 ### Programas de prueba incluidos
 
@@ -128,7 +135,7 @@ archivo con errores, imprime cada error con línea y columna en vez del árbol.
 | `invalido_sintactico.arc` | inválido | falta el nombre de la poción después de `purificar`, y expresión incompleta |
 | `invalido_sintactico_recolectar.arc` | inválido | falta la palabra reservada `de` en `recolectar` |
 
-Para correr todos de una vez y ver el resultado de cada uno:
+Para correrlos todos de una vez y ver el resultado de cada uno:
 
 ```bash
 cd src
@@ -154,7 +161,7 @@ done
   una regla de la gramática (por ejemplo `asignacion`) y sus hijos son los
   tokens o sub-reglas que la componen. `main.py` lo recorre con
   `imprimir_arbol` para mostrarlo de forma legible.
-- **Manejo de errores**: reemplazamos los listeners por defecto de ANTLR
+- **Manejo de errores**: se reemplazan los listeners por defecto de ANTLR
   (`errores.py`) para capturar cada error con su línea y columna, en vez de
   dejar que ANTLR los imprima con su formato técnico en inglés.
 
