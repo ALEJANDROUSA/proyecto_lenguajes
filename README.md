@@ -146,7 +146,7 @@ for f in ../examples/*.arc; do
 done
 ```
 
-## De la gramática al código (para la sustentación)
+## De la gramática al código
 
 - **Lexer** (`ArcanumLexer.py`): agrupa los caracteres del archivo en
   tokens (`INVOCAR`, `ID`, `NUMERO`, `CADENA`, etc.). Cada tipo de token es,
