@@ -1,4 +1,4 @@
-# Generated from Arcanum.g4 by ANTLR 4.9.2
+# Generated from Arcanum.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -9,63 +9,58 @@ else:
 	from typing.io import TextIO
 
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3)")
-        buf.write("\u0099\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
-        buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
-        buf.write("\t\16\4\17\t\17\4\20\t\20\3\2\6\2\"\n\2\r\2\16\2#\3\2")
-        buf.write("\3\2\3\3\3\3\5\3*\n\3\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5")
-        buf.write("\3\5\5\5\65\n\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3")
-        buf.write("\7\3\7\3\b\3\b\3\b\3\b\3\b\3\t\3\t\3\t\7\tJ\n\t\f\t\16")
-        buf.write("\tM\13\t\3\n\3\n\3\n\3\n\3\n\3\n\3\n\3\n\3\n\3\13\3\13")
-        buf.write("\3\13\7\13[\n\13\f\13\16\13^\13\13\3\f\3\f\3\f\3\f\3\f")
-        buf.write("\3\f\5\ff\n\f\3\r\3\r\3\r\3\r\3\r\3\r\3\r\3\r\5\rp\n\r")
-        buf.write("\3\r\3\r\3\r\3\r\3\r\3\r\7\rx\n\r\f\r\16\r{\13\r\3\16")
-        buf.write("\3\16\3\16\3\16\3\17\3\17\3\20\3\20\3\20\3\20\3\20\3\20")
-        buf.write("\3\20\3\20\3\20\5\20\u008c\n\20\3\20\3\20\3\20\3\20\3")
-        buf.write("\20\3\20\7\20\u0094\n\20\f\20\16\20\u0097\13\20\3\20\2")
-        buf.write("\4\30\36\21\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36\2\6")
-        buf.write("\3\2\n\17\3\2#$\3\2\20\21\3\2\22\23\2\u009c\2!\3\2\2\2")
-        buf.write("\4)\3\2\2\2\6+\3\2\2\2\b\64\3\2\2\2\n\66\3\2\2\2\f:\3")
-        buf.write("\2\2\2\16A\3\2\2\2\20F\3\2\2\2\22N\3\2\2\2\24W\3\2\2\2")
-        buf.write("\26e\3\2\2\2\30o\3\2\2\2\32|\3\2\2\2\34\u0080\3\2\2\2")
-        buf.write("\36\u008b\3\2\2\2 \"\5\4\3\2! \3\2\2\2\"#\3\2\2\2#!\3")
-        buf.write("\2\2\2#$\3\2\2\2$%\3\2\2\2%&\7\2\2\3&\3\3\2\2\2\'*\5\6")
-        buf.write("\4\2(*\5\22\n\2)\'\3\2\2\2)(\3\2\2\2*\5\3\2\2\2+,\7%\2")
-        buf.write("\2,-\7\3\2\2-.\5\b\5\2./\7\4\2\2/\7\3\2\2\2\60\65\5\n")
-        buf.write("\6\2\61\65\5\f\7\2\62\65\5\16\b\2\63\65\5\36\20\2\64\60")
-        buf.write("\3\2\2\2\64\61\3\2\2\2\64\62\3\2\2\2\64\63\3\2\2\2\65")
-        buf.write("\t\3\2\2\2\66\67\7\24\2\2\678\7\31\2\289\7\'\2\29\13\3")
-        buf.write("\2\2\2:;\7\25\2\2;<\7\5\2\2<=\5\20\t\2=>\7\6\2\2>?\7\32")
-        buf.write("\2\2?@\7%\2\2@\r\3\2\2\2AB\7\26\2\2BC\7%\2\2CD\7\33\2")
-        buf.write("\2DE\5\30\r\2E\17\3\2\2\2FK\7%\2\2GH\7\7\2\2HJ\7%\2\2")
-        buf.write("IG\3\2\2\2JM\3\2\2\2KI\3\2\2\2KL\3\2\2\2L\21\3\2\2\2M")
-        buf.write("K\3\2\2\2NO\7\27\2\2OP\7\30\2\2PQ\7%\2\2QR\7\31\2\2RS")
-        buf.write("\7%\2\2ST\7\34\2\2TU\5\24\13\2UV\7\4\2\2V\23\3\2\2\2W")
-        buf.write("\\\5\26\f\2XY\7\7\2\2Y[\5\26\f\2ZX\3\2\2\2[^\3\2\2\2\\")
-        buf.write("Z\3\2\2\2\\]\3\2\2\2]\25\3\2\2\2^\\\3\2\2\2_`\7\35\2\2")
-        buf.write("`f\7%\2\2ab\7\36\2\2bf\7%\2\2cd\7\37\2\2df\7\'\2\2e_\3")
-        buf.write("\2\2\2ea\3\2\2\2ec\3\2\2\2f\27\3\2\2\2gh\b\r\1\2hi\7\"")
-        buf.write("\2\2ip\5\30\r\5jk\7\b\2\2kl\5\30\r\2lm\7\t\2\2mp\3\2\2")
-        buf.write("\2np\5\32\16\2og\3\2\2\2oj\3\2\2\2on\3\2\2\2py\3\2\2\2")
-        buf.write("qr\f\7\2\2rs\7 \2\2sx\5\30\r\btu\f\6\2\2uv\7!\2\2vx\5")
-        buf.write("\30\r\7wq\3\2\2\2wt\3\2\2\2x{\3\2\2\2yw\3\2\2\2yz\3\2")
-        buf.write("\2\2z\31\3\2\2\2{y\3\2\2\2|}\5\36\20\2}~\5\34\17\2~\177")
-        buf.write("\5\36\20\2\177\33\3\2\2\2\u0080\u0081\t\2\2\2\u0081\35")
-        buf.write("\3\2\2\2\u0082\u0083\b\20\1\2\u0083\u0084\7\b\2\2\u0084")
-        buf.write("\u0085\5\36\20\2\u0085\u0086\7\t\2\2\u0086\u008c\3\2\2")
-        buf.write("\2\u0087\u008c\7&\2\2\u0088\u008c\7\'\2\2\u0089\u008c")
-        buf.write("\t\3\2\2\u008a\u008c\7%\2\2\u008b\u0082\3\2\2\2\u008b")
-        buf.write("\u0087\3\2\2\2\u008b\u0088\3\2\2\2\u008b\u0089\3\2\2\2")
-        buf.write("\u008b\u008a\3\2\2\2\u008c\u0095\3\2\2\2\u008d\u008e\f")
-        buf.write("\t\2\2\u008e\u008f\t\4\2\2\u008f\u0094\5\36\20\n\u0090")
-        buf.write("\u0091\f\b\2\2\u0091\u0092\t\5\2\2\u0092\u0094\5\36\20")
-        buf.write("\t\u0093\u008d\3\2\2\2\u0093\u0090\3\2\2\2\u0094\u0097")
-        buf.write("\3\2\2\2\u0095\u0093\3\2\2\2\u0095\u0096\3\2\2\2\u0096")
-        buf.write("\37\3\2\2\2\u0097\u0095\3\2\2\2\16#)\64K\\eowy\u008b\u0093")
-        buf.write("\u0095")
-        return buf.getvalue()
-
+    return [
+        4,1,39,151,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
+        2,14,7,14,1,0,4,0,32,8,0,11,0,12,0,33,1,0,1,0,1,1,1,1,3,1,40,8,1,
+        1,2,1,2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,3,3,51,8,3,1,4,1,4,1,4,1,4,1,
+        5,1,5,1,5,1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,5,7,72,
+        8,7,10,7,12,7,75,9,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,9,1,9,
+        1,9,5,9,89,8,9,10,9,12,9,92,9,9,1,10,1,10,1,10,1,10,1,10,1,10,3,
+        10,100,8,10,1,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,3,11,110,8,11,
+        1,11,1,11,1,11,1,11,1,11,1,11,5,11,118,8,11,10,11,12,11,121,9,11,
+        1,12,1,12,1,12,1,12,1,13,1,13,1,14,1,14,1,14,1,14,1,14,1,14,1,14,
+        1,14,1,14,3,14,138,8,14,1,14,1,14,1,14,1,14,1,14,1,14,5,14,146,8,
+        14,10,14,12,14,149,9,14,1,14,0,2,22,28,15,0,2,4,6,8,10,12,14,16,
+        18,20,22,24,26,28,0,4,1,0,8,13,1,0,33,34,1,0,14,15,1,0,16,17,154,
+        0,31,1,0,0,0,2,39,1,0,0,0,4,41,1,0,0,0,6,50,1,0,0,0,8,52,1,0,0,0,
+        10,56,1,0,0,0,12,63,1,0,0,0,14,68,1,0,0,0,16,76,1,0,0,0,18,85,1,
+        0,0,0,20,99,1,0,0,0,22,109,1,0,0,0,24,122,1,0,0,0,26,126,1,0,0,0,
+        28,137,1,0,0,0,30,32,3,2,1,0,31,30,1,0,0,0,32,33,1,0,0,0,33,31,1,
+        0,0,0,33,34,1,0,0,0,34,35,1,0,0,0,35,36,5,0,0,1,36,1,1,0,0,0,37,
+        40,3,4,2,0,38,40,3,16,8,0,39,37,1,0,0,0,39,38,1,0,0,0,40,3,1,0,0,
+        0,41,42,5,35,0,0,42,43,5,1,0,0,43,44,3,6,3,0,44,45,5,2,0,0,45,5,
+        1,0,0,0,46,51,3,8,4,0,47,51,3,10,5,0,48,51,3,12,6,0,49,51,3,28,14,
+        0,50,46,1,0,0,0,50,47,1,0,0,0,50,48,1,0,0,0,50,49,1,0,0,0,51,7,1,
+        0,0,0,52,53,5,18,0,0,53,54,5,23,0,0,54,55,5,37,0,0,55,9,1,0,0,0,
+        56,57,5,19,0,0,57,58,5,3,0,0,58,59,3,14,7,0,59,60,5,4,0,0,60,61,
+        5,24,0,0,61,62,5,35,0,0,62,11,1,0,0,0,63,64,5,20,0,0,64,65,5,35,
+        0,0,65,66,5,25,0,0,66,67,3,22,11,0,67,13,1,0,0,0,68,73,5,35,0,0,
+        69,70,5,5,0,0,70,72,5,35,0,0,71,69,1,0,0,0,72,75,1,0,0,0,73,71,1,
+        0,0,0,73,74,1,0,0,0,74,15,1,0,0,0,75,73,1,0,0,0,76,77,5,21,0,0,77,
+        78,5,22,0,0,78,79,5,35,0,0,79,80,5,23,0,0,80,81,5,35,0,0,81,82,5,
+        26,0,0,82,83,3,18,9,0,83,84,5,2,0,0,84,17,1,0,0,0,85,90,3,20,10,
+        0,86,87,5,5,0,0,87,89,3,20,10,0,88,86,1,0,0,0,89,92,1,0,0,0,90,88,
+        1,0,0,0,90,91,1,0,0,0,91,19,1,0,0,0,92,90,1,0,0,0,93,94,5,27,0,0,
+        94,100,5,35,0,0,95,96,5,28,0,0,96,100,5,35,0,0,97,98,5,29,0,0,98,
+        100,5,37,0,0,99,93,1,0,0,0,99,95,1,0,0,0,99,97,1,0,0,0,100,21,1,
+        0,0,0,101,102,6,11,-1,0,102,103,5,32,0,0,103,110,3,22,11,3,104,105,
+        5,6,0,0,105,106,3,22,11,0,106,107,5,7,0,0,107,110,1,0,0,0,108,110,
+        3,24,12,0,109,101,1,0,0,0,109,104,1,0,0,0,109,108,1,0,0,0,110,119,
+        1,0,0,0,111,112,10,5,0,0,112,113,5,30,0,0,113,118,3,22,11,6,114,
+        115,10,4,0,0,115,116,5,31,0,0,116,118,3,22,11,5,117,111,1,0,0,0,
+        117,114,1,0,0,0,118,121,1,0,0,0,119,117,1,0,0,0,119,120,1,0,0,0,
+        120,23,1,0,0,0,121,119,1,0,0,0,122,123,3,28,14,0,123,124,3,26,13,
+        0,124,125,3,28,14,0,125,25,1,0,0,0,126,127,7,0,0,0,127,27,1,0,0,
+        0,128,129,6,14,-1,0,129,130,5,6,0,0,130,131,3,28,14,0,131,132,5,
+        7,0,0,132,138,1,0,0,0,133,138,5,36,0,0,134,138,5,37,0,0,135,138,
+        7,1,0,0,136,138,5,35,0,0,137,128,1,0,0,0,137,133,1,0,0,0,137,134,
+        1,0,0,0,137,135,1,0,0,0,137,136,1,0,0,0,138,147,1,0,0,0,139,140,
+        10,7,0,0,140,141,7,2,0,0,141,146,3,28,14,8,142,143,10,6,0,0,143,
+        144,7,3,0,0,144,146,3,28,14,7,145,139,1,0,0,0,145,142,1,0,0,0,146,
+        149,1,0,0,0,147,145,1,0,0,0,147,148,1,0,0,0,148,29,1,0,0,0,149,147,
+        1,0,0,0,12,33,39,50,73,90,99,109,117,119,137,145,147
+    ]
 
 class ArcanumParser ( Parser ):
 
@@ -158,9 +153,10 @@ class ArcanumParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.9.2")
+        self.checkVersion("4.13.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
+
 
 
 
@@ -217,7 +213,7 @@ class ArcanumParser ( Parser ):
                 self.state = 33 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==ArcanumParser.FORJAR or _la==ArcanumParser.ID):
+                if not (_la==21 or _la==35):
                     break
 
             self.state = 35
@@ -229,6 +225,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class HechizoContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -273,12 +270,12 @@ class ArcanumParser ( Parser ):
             self.state = 39
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [ArcanumParser.ID]:
+            if token in [35]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 37
                 self.asignacion()
                 pass
-            elif token in [ArcanumParser.FORJAR]:
+            elif token in [21]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 38
                 self.instruccionForjar()
@@ -293,6 +290,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class AsignacionContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -350,6 +348,7 @@ class ArcanumParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ExpresionContext(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -401,22 +400,22 @@ class ArcanumParser ( Parser ):
             self.state = 50
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [ArcanumParser.INVOCAR]:
+            if token in [18]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 46
                 self.invocarExpr()
                 pass
-            elif token in [ArcanumParser.RECOLECTAR]:
+            elif token in [19]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 47
                 self.recolectarExpr()
                 pass
-            elif token in [ArcanumParser.PURIFICAR]:
+            elif token in [20]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 48
                 self.purificarExpr()
                 pass
-            elif token in [ArcanumParser.T__5, ArcanumParser.VERDADERO, ArcanumParser.FALSO, ArcanumParser.ID, ArcanumParser.NUMERO, ArcanumParser.CADENA]:
+            elif token in [6, 33, 34, 35, 36, 37]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 49
                 self.expresionAritmetica(0)
@@ -431,6 +430,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class InvocarExprContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -487,6 +487,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class RecolectarExprContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -554,6 +555,7 @@ class ArcanumParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class PurificarExprContext(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -616,6 +618,7 @@ class ArcanumParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ListaIdsContext(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -661,7 +664,7 @@ class ArcanumParser ( Parser ):
             self.state = 73
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==ArcanumParser.T__4:
+            while _la==5:
                 self.state = 69
                 self.match(ArcanumParser.T__4)
                 self.state = 70
@@ -677,6 +680,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class InstruccionForjarContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -757,6 +761,7 @@ class ArcanumParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ListaParametrosContext(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -803,7 +808,7 @@ class ArcanumParser ( Parser ):
             self.state = 90
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==ArcanumParser.T__4:
+            while _la==5:
                 self.state = 86
                 self.match(ArcanumParser.T__4)
                 self.state = 87
@@ -819,6 +824,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ParametroContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -870,21 +876,21 @@ class ArcanumParser ( Parser ):
             self.state = 99
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [ArcanumParser.EJE_X]:
+            if token in [27]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 93
                 self.match(ArcanumParser.EJE_X)
                 self.state = 94
                 self.match(ArcanumParser.ID)
                 pass
-            elif token in [ArcanumParser.EJE_Y]:
+            elif token in [28]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 95
                 self.match(ArcanumParser.EJE_Y)
                 self.state = 96
                 self.match(ArcanumParser.ID)
                 pass
-            elif token in [ArcanumParser.TITULO]:
+            elif token in [29]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 97
                 self.match(ArcanumParser.TITULO)
@@ -901,6 +907,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class CondicionContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -1151,6 +1158,7 @@ class ArcanumParser ( Parser ):
             self.unrollRecursionContexts(_parentctx)
         return localctx
 
+
     class ComparacionContext(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -1209,6 +1217,7 @@ class ArcanumParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class OperadorComparacionContext(ParserRuleContext):
         __slots__ = 'parser'
 
@@ -1246,7 +1255,7 @@ class ArcanumParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 126
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ArcanumParser.T__7) | (1 << ArcanumParser.T__8) | (1 << ArcanumParser.T__9) | (1 << ArcanumParser.T__10) | (1 << ArcanumParser.T__11) | (1 << ArcanumParser.T__12))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 16128) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1258,6 +1267,7 @@ class ArcanumParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ExpresionAritmeticaContext(ParserRuleContext):
         __slots__ = 'parser'
@@ -1468,7 +1478,7 @@ class ArcanumParser ( Parser ):
             self.state = 137
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [ArcanumParser.T__5]:
+            if token in [6]:
                 localctx = ArcanumParser.ParentesisContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
@@ -1480,33 +1490,33 @@ class ArcanumParser ( Parser ):
                 self.state = 131
                 self.match(ArcanumParser.T__6)
                 pass
-            elif token in [ArcanumParser.NUMERO]:
+            elif token in [36]:
                 localctx = ArcanumParser.NumeroContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 133
                 self.match(ArcanumParser.NUMERO)
                 pass
-            elif token in [ArcanumParser.CADENA]:
+            elif token in [37]:
                 localctx = ArcanumParser.CadenaLiteralContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 134
                 self.match(ArcanumParser.CADENA)
                 pass
-            elif token in [ArcanumParser.VERDADERO, ArcanumParser.FALSO]:
+            elif token in [33, 34]:
                 localctx = ArcanumParser.BooleanoContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 135
                 _la = self._input.LA(1)
-                if not(_la==ArcanumParser.VERDADERO or _la==ArcanumParser.FALSO):
+                if not(_la==33 or _la==34):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
                     self.consume()
                 pass
-            elif token in [ArcanumParser.ID]:
+            elif token in [35]:
                 localctx = ArcanumParser.IdentificadorContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
@@ -1537,7 +1547,7 @@ class ArcanumParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
                         self.state = 140
                         _la = self._input.LA(1)
-                        if not(_la==ArcanumParser.T__13 or _la==ArcanumParser.T__14):
+                        if not(_la==14 or _la==15):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -1555,7 +1565,7 @@ class ArcanumParser ( Parser ):
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
                         self.state = 143
                         _la = self._input.LA(1)
-                        if not(_la==ArcanumParser.T__15 or _la==ArcanumParser.T__16):
+                        if not(_la==16 or _la==17):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
